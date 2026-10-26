@@ -5,21 +5,21 @@
 class Overthink < Formula
   desc "A dramatic overanalysis engine for your most questionable life decisions"
   homepage "https://github.com/rishichawda/overthinker"
-  version "0.1.0"
+  version "0.1.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rishichawda/overthinker/releases/download/v0.1.0/overthink_Darwin_x86_64.tar.gz"
-      sha256 "b184f8348d571aa58afbd7ae949e400ce64ea83a9ef8f6ab4d41ee22548e35f0"
+      url "https://github.com/rishichawda/overthinker/releases/download/v0.1.1/overthink_Darwin_x86_64.tar.gz"
+      sha256 "7925e6712aa0e7b82f9c11b4529c74bc9f12114fbfe32f5e0f8ed231eeb788a2"
 
       define_method(:install) do
         bin.install "overthink"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rishichawda/overthinker/releases/download/v0.1.0/overthink_Darwin_arm64.tar.gz"
-      sha256 "f103a09f7fdfe102955de685b6d42d66b48ed61e6cb205c6454035aa4cf18c9d"
+      url "https://github.com/rishichawda/overthinker/releases/download/v0.1.1/overthink_Darwin_arm64.tar.gz"
+      sha256 "f16940e7b84197912d17d06511c81bd4cddd40f95c7a4473d0bbe2572506afc9"
 
       define_method(:install) do
         bin.install "overthink"
@@ -29,15 +29,15 @@ class Overthink < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rishichawda/overthinker/releases/download/v0.1.0/overthink_Linux_x86_64.tar.gz"
-      sha256 "a9efba404da8c6fc3ab1d39d016bfbb907aa5b7d9b7a76c7c48ded740d3863b8"
+      url "https://github.com/rishichawda/overthinker/releases/download/v0.1.1/overthink_Linux_x86_64.tar.gz"
+      sha256 "e4a37789e7b5786af7db2b03a9b1e60573b8821acadbe1342bd96479d5afe3c7"
       define_method(:install) do
         bin.install "overthink"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rishichawda/overthinker/releases/download/v0.1.0/overthink_Linux_arm64.tar.gz"
-      sha256 "778a79eb181d01836554f07537ed19d8692204b5af2361de533d5ba7e0eab758"
+      url "https://github.com/rishichawda/overthinker/releases/download/v0.1.1/overthink_Linux_arm64.tar.gz"
+      sha256 "3f6875e9a7b9d32d43befc759c9085d1b40e2d61eeea2749cd88af3df3ec44f3"
       define_method(:install) do
         bin.install "overthink"
       end
